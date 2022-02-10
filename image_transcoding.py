@@ -6,7 +6,7 @@ from pathlib import Path
 
 source_folder = "img"
 output_folder = "output"
-img_type = "png" # 设置要转换图片的目标格式
+img_type = input("请输入目标格式：") # input函数返回的是用户输入内容，为字符串类型，若需要计算数字，用int()或者float()函数转换数据类型
 
 path_input = Path(__file__).parent / source_folder
 path_output = Path(__file__).parent / output_folder
